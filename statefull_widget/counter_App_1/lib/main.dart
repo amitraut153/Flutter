@@ -21,9 +21,12 @@ class _CounterAppState extends State<CounterApp> {
       title: "Counter App",
       home: Scaffold(
         appBar: AppBar(
-          title: const Text("Counter App"),
+          title: const Text(
+            "Counter App",
+            style: TextStyle(color: Colors.white),
+          ),
           centerTitle: true,
-          backgroundColor: Colors.blue,
+          backgroundColor: const Color.fromARGB(255, 15, 16, 16),
         ),
         body: Center(
           child: Text("$count"),
