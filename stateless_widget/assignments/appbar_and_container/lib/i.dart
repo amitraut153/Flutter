@@ -37,7 +37,7 @@ class AppBar1 extends StatelessWidget {
               ]),
         ],
         title: const Text(
-          "AppBar and Container",
+          "AppBar and Container 1",
           style: TextStyle(
             fontSize: 20,
             fontWeight: FontWeight.w700,
