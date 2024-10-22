@@ -10,11 +10,12 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
           title: const Text(
             "Netflix Demo",
-            style: TextStyle(fontSize: 26, fontWeight: FontWeight.bold),
+            style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
           ),
           centerTitle: true,
           backgroundColor: Colors.blue,
@@ -29,7 +30,7 @@ class MainApp extends StatelessWidget {
                 const Text(
                   "Action Movies",
                   style: TextStyle(
-                    fontSize: 30,
+                    fontSize: 23,
                     fontWeight: FontWeight.w600,
                   ),
                 ),
@@ -39,31 +40,39 @@ class MainApp extends StatelessWidget {
                     children: [
                       Container(
                         padding: const EdgeInsets.all(5),
-                        height: 300,
-                        width: 200,
+                        height: 250,
+                        width: 180,
                         child: Image.network(
-                            "https://bsmedia.business-standard.com/_media/bs/img/article/2024-06/11/full/1718097230-0129.png"),
+                          "https://bsmedia.business-standard.com/_media/bs/img/article/2024-06/11/full/1718097230-0129.png",
+                          fit: BoxFit.cover,
+                        ),
                       ),
                       Container(
                         padding: const EdgeInsets.all(5),
-                        height: 300,
-                        width: 200,
+                        height: 250,
+                        width: 180,
                         child: Image.network(
-                            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4ddIOu5-fqZ5OagOeROcdv1SFAXDiGI-dRQ&s"),
+                          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4ddIOu5-fqZ5OagOeROcdv1SFAXDiGI-dRQ&s",
+                          fit: BoxFit.cover,
+                        ),
                       ),
                       Container(
                         padding: const EdgeInsets.all(5),
-                        height: 300,
-                        width: 200,
+                        height: 250,
+                        width: 180,
                         child: Image.network(
-                            "https://bsmedia.business-standard.com/_media/bs/img/article/2024-06/11/full/1718097230-0129.png"),
+                          "https://bsmedia.business-standard.com/_media/bs/img/article/2024-06/11/full/1718097230-0129.png",
+                          fit: BoxFit.cover,
+                        ),
                       ),
                       Container(
                         padding: const EdgeInsets.all(5),
-                        height: 300,
-                        width: 200,
+                        height: 250,
+                        width: 180,
                         child: Image.network(
-                            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4ddIOu5-fqZ5OagOeROcdv1SFAXDiGI-dRQ&s"),
+                          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4ddIOu5-fqZ5OagOeROcdv1SFAXDiGI-dRQ&s",
+                          fit: BoxFit.cover,
+                        ),
                       ),
                     ],
                   ),

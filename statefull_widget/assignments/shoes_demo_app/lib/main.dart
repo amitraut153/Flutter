@@ -118,71 +118,74 @@ class _MainAppState extends State<MainApp> {
                 // mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Text(
-                    "Hi my name is Amit from Akola distric, my village name is Danapur, tq. Telhara Hi my name is Amit from Akola distric, my village name is Danapur, tq. Telhara",
+                    "The brand recognition, cultural significance, and emotional value associated with the Air Force 1 are all factored into its price, making it a true investment piece for sneaker enthusiasts.",
                     style: TextStyle(fontSize: 17),
                   ),
                 ],
               ),
             ),
-            Row(
-              children: [
-                const SizedBox(
-                  child: Text(
-                    "Quality",
-                    style: TextStyle(
-                      fontSize: 19,
-                      fontWeight: FontWeight.w700,
+            Padding(
+              padding: const EdgeInsets.only(left: 18.0, bottom: 10),
+              child: Row(
+                children: [
+                  const SizedBox(
+                    child: Text(
+                      "Quality",
+                      style: TextStyle(
+                        fontSize: 19,
+                        fontWeight: FontWeight.w700,
+                      ),
                     ),
                   ),
-                ),
-                const SizedBox(
-                  width: 10,
-                ),
-                SizedBox(
-                  child: GestureDetector(
-                    onTap: () {
-                      log("Ckick");
-                      count(false);
-                      setState(() {});
-                    },
-                    child: const Icon(
-                      Icons.remove,
+                  const SizedBox(
+                    width: 10,
+                  ),
+                  SizedBox(
+                    child: GestureDetector(
+                      onTap: () {
+                        log("Ckick");
+                        count(false);
+                        setState(() {});
+                      },
+                      child: const Icon(
+                        Icons.remove,
+                      ),
                     ),
                   ),
-                ),
-                const SizedBox(
-                  width: 10,
-                ),
-                Container(
-                  // width: MediaQuery.of(context).size.width,
-                  width: 50,
-                  height: 40,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(10),
-                    color: const Color.fromARGB(255, 208, 198, 198),
+                  const SizedBox(
+                    width: 10,
                   ),
-                  alignment: Alignment.center,
-                  child: Text(
-                    "$num",
-                    style: const TextStyle(fontSize: 20),
-                  ),
-                ),
-                const SizedBox(
-                  width: 10,
-                ),
-                SizedBox(
-                  child: GestureDetector(
-                    onTap: () {
-                      log("Click");
-                      count(true);
-                      setState(() {});
-                    },
-                    child: const Icon(
-                      Icons.add,
+                  Container(
+                    // width: MediaQuery.of(context).size.width,
+                    width: 50,
+                    height: 40,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      color: const Color.fromARGB(255, 208, 198, 198),
+                    ),
+                    alignment: Alignment.center,
+                    child: Text(
+                      "$num",
+                      style: const TextStyle(fontSize: 20),
                     ),
                   ),
-                ),
-              ],
+                  const SizedBox(
+                    width: 10,
+                  ),
+                  SizedBox(
+                    child: GestureDetector(
+                      onTap: () {
+                        log("Click");
+                        count(true);
+                        setState(() {});
+                      },
+                      child: const Icon(
+                        Icons.add,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
             ),
             const SizedBox(
               height: 10,
